@@ -10,7 +10,7 @@ cd into the cloned directory:
 
 cd dexi-px4-sitl-node-red-dev
 
-# Code
+## Code
 
 We will clone two repos into our local workspace so that development can happen from our host machine and our changes will not be lost if/when we kill the docker containers.
 
@@ -22,11 +22,11 @@ git clone -b develop https://github.com/droneblocks/dexi --recursive
 
 git clone https://github.com/droneblocks/node-red-dexi
 
-# Docker Compose
+## Docker Compose
 
 docker compose up
 
-# Get SITL Running
+## Get SITL Running
 
 Go to http://localhost:6080
 
@@ -40,7 +40,9 @@ make px4_sitl gz_x500
 
 Open QGC and voila
 
-# Build DEXI ROS Project
+## Build DEXI ROS Project
+
+Open a new terminal and do the following:
 
 cd ~/dexi_ws
 
@@ -48,16 +50,14 @@ colcon build --packages-select dexi_interfaces dexi_py px4_msgs
 
 source install/setup.bash
 
-ros2 launch dexi_py offboard_sitl.launch.py
+ros2 launch dexi_py offboard_sitl_rosbridge.launch.py
 
-This launch file witll start the microdds agent and the DEXI PX4 Offboard Manager node.
+This launch file witll start the microdds agent, rosbridge, and the DEXI PX4 Offboard Manager node.
 
-# Start the ROS Bridge Server
+## Access Node-RED
 
-ros2 launch rosbridge_server rosbridge_websocket.xml
-
-# Access Node-RED
+Open a new tab and access Node-RED:
 
 http://localhost:1880
 
-
+Get the docker internal IP of the dexi-dev container and configure Node-RED websocket server with the IP address.
