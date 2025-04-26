@@ -10,18 +10,6 @@ cd into the cloned directory:
 
 cd dexi-px4-sitl-node-red-dev
 
-## Code
-
-We will clone two repos into our local workspace so that development can happen from our host machine and our changes will not be lost if/when we kill the docker containers.
-
-1. Get the DEXI ROS source code. For now grab the develop branch since it has the latest and greatest:
-
-git clone -b develop https://github.com/droneblocks/dexi --recursive
-
-2. Get the DEXI Node-RED source code:
-
-git clone https://github.com/droneblocks/node-red-dexi
-
 ## Docker Compose
 
 docker compose up
