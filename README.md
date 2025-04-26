@@ -12,11 +12,11 @@ cd dexi-px4-sitl-node-red-dev
 
 ## Docker Compose
 
-docker run -it -p 1880:1880 -v ${PWD}/flows:/data -v ${PWD}:/node-red-dexi --name dexi-node-red droneblocks/dexi-node-red:latest
-
 docker compose up
 
-make sure to restart the container before accessing it
+On Docker Desktop, delete the container with both Node-RED and the instance of wr-dexi
+
+Go to images, run wravr/wr-dexi on ports 6080:80 and 9090:9090, run droneblocks/dexi-node-red on 1880:1880
 
 ## Get SITL Running
 
