@@ -4,7 +4,7 @@ Repo for experimenting with PX4 SITL using Node-RED
 ## Clone
 Clone this repo:
 
-git clone https://github.com/SMCA-WR/dexi-px4-sitl-node-red-dev.git
+git clone https://github.com/SMCA-WR/dexi-px4-sitl-node-red-dev.git --recurse-submodules
 
 cd into the cloned directory:
 
