@@ -4,7 +4,7 @@ Repo for experimenting with PX4 SITL using Node-RED
 ## Clone
 Clone this repo:
 
-https://github.com/DroneBlocks/dexi-px4-sitl-node-red-dev
+https://github.com/SMCA-WR/dexi-px4-sitl-node-red-dev.git
 
 cd into the cloned directory:
 
