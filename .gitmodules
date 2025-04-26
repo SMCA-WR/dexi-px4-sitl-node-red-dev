@@ -1,3 +1,6 @@
 [submodule "node-red-dexi"]
 	path = node-red-dexi
 	url = https://github.com/DroneBlocks/node-red-dexi
+[submodule "dexi"]
+	path = dexi
+	url = https://github.com/DroneBlocks/dexi.git
