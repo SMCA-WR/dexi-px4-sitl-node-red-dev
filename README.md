@@ -16,6 +16,8 @@ docker run -it -p 1880:1880 -v ${PWD}/flows:/data -v ${PWD}:/node-red-dexi --nam
 
 docker compose up
 
+make sure to restart the container before accessing it
+
 ## Get SITL Running
 
 Go to http://localhost:6080
