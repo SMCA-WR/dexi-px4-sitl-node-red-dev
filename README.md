@@ -12,6 +12,8 @@ cd dexi-px4-sitl-node-red-dev
 
 ## Docker Compose
 
+docker run -it -p 1880:1880 -v ${PWD}/flows:/data -v ${PWD}:/node-red-dexi --name dexi-node-red droneblocks/dexi-node-red:latest
+
 docker compose up
 
 ## Get SITL Running
