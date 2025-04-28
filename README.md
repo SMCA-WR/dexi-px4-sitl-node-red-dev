@@ -14,10 +14,6 @@ cd dexi-px4-sitl-node-red-dev
 
 docker compose up
 
-On Docker Desktop, delete the container with both Node-RED and the instance of wr-dexi
-
-Go to images, run wravr/wr-dexi on ports 6080:80 and 9090:9090, run droneblocks/dexi-node-red on 1880:1880
-
 ## Get SITL Running
 
 Go to http://localhost:6080
@@ -44,7 +40,7 @@ source install/setup.bash
 
 ros2 launch dexi_py offboard_sitl_rosbridge.launch.py
 
-This launch file witll start the microdds agent, rosbridge, and the DEXI PX4 Offboard Manager node.
+This launch file will start the microdds agent, rosbridge, and the DEXI PX4 Offboard Manager node.
 
 ## Access Node-RED
 
