@@ -8,5 +8,16 @@ services:
     security_opt:
       - seccomp=unconfined
     volumes:
-      - "${PWD}/dexi:/home/ubuntu/dexi_ws/src/"
+      - "./dexi:/var/lib/docker"
     shm_size: "512m"
+
+  dexi-node-red:
+    image: droneblocks/dexi-node-red:latest
+    container_name: dexi-node-red
+    ports:
+      - "1880:1880"
+    volumes:
+      - ".:/node-red-dexi"
+      - "./flows:/data"
+    stdin_open: true
+    tty: true
