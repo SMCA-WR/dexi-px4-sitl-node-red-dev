@@ -1,6 +1,6 @@
 services:
   dexi-dev:
-    image: wravr/dexi-wr:latest
+    image: wravr/wr-dexi:latest
     container_name: dexi-dev
     ports:
       - "6080:80"
