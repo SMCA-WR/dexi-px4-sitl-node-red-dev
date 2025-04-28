@@ -1,6 +1,6 @@
 services:
   dexi-dev:
-    image: droneblocks/dexi-px4-sitl-amd64:1.15
+    image: wravr/dexi-wr:latest
     container_name: dexi-dev
     ports:
       - "6080:80"
