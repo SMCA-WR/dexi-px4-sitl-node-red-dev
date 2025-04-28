@@ -12,6 +12,8 @@ cd dexi-px4-sitl-node-red-dev
 
 ## Docker Compose
 
+ensure docker desktop is open
+
 docker compose up
 
 ## Get SITL Running
