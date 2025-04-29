@@ -16,8 +16,6 @@ ensure docker desktop is open
 
 docker compose up
 
-docker run -it -p 1880:1880 -v ${PWD}/flows:/data -v ${PWD}:/node-red-dexi --name dexi-node-red droneblocks/dexi-node-red:latest
-
 ## Get SITL Running
 
 Go to http://localhost:6080
